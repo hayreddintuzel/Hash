@@ -39,7 +39,8 @@ class Hash
      * 
      * @return string
      */
-    public static function getHash() {
+    public function getHash() {
+        
         return $this->hash;
     }
 }
