@@ -31,6 +31,6 @@ class Hash
      */
     public function __construct(string $algo = 'md5', $data)
     {
-        $this->manager = hash($algo, $data);
+        $this->hash = hash($algo, $data);
     }
 }
