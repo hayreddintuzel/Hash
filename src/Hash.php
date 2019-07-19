@@ -27,10 +27,19 @@ class Hash
      * @param string $algo (optional)
      * @param string $data
      *
-     * @return string
+     * @return void
      */
     public function __construct(string $algo = 'md5', $data)
     {
         $this->hash = hash($algo, $data);
+    }
+
+    /**
+     * Returns hash attribute
+     * 
+     * @return string
+     */
+    public static function getHash() {
+        return $this->hash;
     }
 }
