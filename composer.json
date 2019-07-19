@@ -1,0 +1,19 @@
+{
+    "name": "htuzel/hash",
+    "description": "it is a simple generic hash package that created for smartover interview",
+    "type": "package",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Hayreddin Tüzel",
+            "email": "hayreddintuzel@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "htuzel\\Hash\\": "src/"
+        }
+    },
+    "require": {}
+}
