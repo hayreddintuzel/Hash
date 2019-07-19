@@ -12,6 +12,15 @@ namespace htuzel\Hash;
 
 class Hash
 {
+
+    /**
+     * Hash string
+     *
+     * @var string
+     */
+    protected $hash = '';
+
+
     /**
      * Gets an hash with specific algorith
      *
@@ -20,8 +29,8 @@ class Hash
      *
      * @return string
      */
-    public function getHash(string $algo = 'md5', $data)
+    public function __construct(string $algo = 'md5', $data)
     {
-        return hash($algo, $data);
+        $this->manager = hash($algo, $data);
     }
 }
